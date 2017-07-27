@@ -10,3 +10,4 @@ It's a JavaScript library that is made for User interface. It's supposed to be a
 
 JavaScript Objects are faster than DOM objects. React Virtual DOM is a JS object. It never reads from the real DOM and only writes if there are changes that need to happen. 
 
+JSX - JavaScript as XML 
