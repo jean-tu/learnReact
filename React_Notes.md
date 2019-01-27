@@ -1,6 +1,8 @@
 # Learn React Notes 
 
-It's a JavaScript library that is made for User interface. It's supposed to be able to help Single page applications. The High-speed virutal DOM (Document Object Model) reloads by itself. 
+Website: [https://reactjs.org/](https://reactjs.org/)
+
+It's a JavaScript library that is made for User interface. It's supposed to be able to help Single page applications. The High-speed virtual DOM (Document Object Model) reloads by itself. 
 
 **Functional Programming** - using functions rather than object oriented programming 
 
