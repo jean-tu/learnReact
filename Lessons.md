@@ -1,3 +1,10 @@
+# Lessons 
+
+This file will contain the different lessons in the Lynda courses. For the modification to **index.js**
+
+## States 
+
+```javascript
 import React from 'react';
 import { render } from 'react-dom';
 
@@ -22,16 +29,11 @@ const Book = ({title, author, pages}) => {
 
 // Parent Component
 class Library extends React.Component {
-
-  state ={
-    open: true,
-    freeBookmark: true
-  }
-
-  toggleOpenClosed = () => {
-    this.setState(prevState => ({
-      open: !prevState.open
-    }))
+  constructor(props){
+    super(props) // creates a new instance of the class
+    this.state = {
+      open: true
+    }
   }
   render(){
     console.log(this.state)
@@ -44,16 +46,20 @@ class Library extends React.Component {
             <Book
               title={book.title}
               author={book.author}
-              pages={book.pages}
-              freeBookmark={this.state.freeBookmark}/>
+              pages={book.pages}/>
         )}
       </div>
     )
   }
 }
 
-
 render (
   <Library books={bookList}/>,
   document.getElementById('root')
 )
+```
+
+All of the **state** information should be at the Parent Level (aka in this case the Library) -- **SOURCE OF TRUTH**
+
+
+
